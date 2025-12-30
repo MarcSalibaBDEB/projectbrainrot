@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=4 uid="uid://cjj2rioxncosk"]
 
-[ext_resource type="Script" uid="uid://bjgmne7ksfuwv" path="res://game.gd" id="1_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://dgm1hvw4kl6a7" path="res://WallTile.tscn" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://dr7v27a5mgi13" path="res://PlayerSquare.tscn" id="2_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://jknalfhcdoiy" path="res://Finish.tscn" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://bjgmne7ksfuwv" path="res://Scripts/game.gd" id="1_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://dgm1hvw4kl6a7" path="res://Scenes/WallTile.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://dr7v27a5mgi13" path="res://Scenes/PlayerSquare.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://jknalfhcdoiy" path="res://Scenes/Finish.tscn" id="3_h2yge"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_0xm2m"]
 resource_name = "wallTile"

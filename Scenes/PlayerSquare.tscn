@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dr7v27a5mgi13"]
 
-[ext_resource type="Script" uid="uid://bjrbw3s3ecixa" path="res://playerSquare.gd" id="1_vmnek"]
+[ext_resource type="Script" uid="uid://bjrbw3s3ecixa" path="res://Scripts/playerSquare.gd" id="1_vmnek"]
 [ext_resource type="AudioStream" uid="uid://cttn1gw3fsivt" path="res://sounds/DING.mp3" id="2_rraqy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uap1u"]
