@@ -3,12 +3,15 @@ extends StaticBody2D
 @export var extra_width: float = 300.0
 @export var grow_speed: float = 200.0
 @export var auto_start: bool = true
+@export var start_delay: float = 1.5
 
 @export var direction: int = 1
 
 @onready var col: CollisionShape2D = $CollisionShape2D
 @onready var rect: RectangleShape2D = col.shape as RectangleShape2D
 @onready var visual: ColorRect = $ColorRect
+@onready var delay_timer: Timer = $Timer
+
 
 var base_width: float
 var target_width: float
@@ -29,7 +32,8 @@ func _ready() -> void:
 
 	_sync_visual(rect.size.x)
 
-	growing = auto_start
+	if auto_start:
+		delay_timer.start(start_delay)
 
 func start_growing() -> void:
 	growing = true
@@ -59,3 +63,7 @@ func _physics_process(delta: float) -> void:
 func _sync_visual(current_width: float) -> void:
 	visual.size.x = current_width
 	visual.position.x = -current_width / 2.0 + (col.position.x - base_col_x)
+
+
+func _on_start_delay_timer_timeout() -> void:
+	growing = true
