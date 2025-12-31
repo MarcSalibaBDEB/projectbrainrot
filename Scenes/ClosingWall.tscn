@@ -2,13 +2,13 @@
 
 [ext_resource type="Script" uid="uid://b8vgb0cklviad" path="res://Scripts/closing_wall.gd" id="1_ffkud"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3s4q0"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ffkud"]
 
-[node name="ClosingWall" type="StaticBody2D"]
+[node name="ClosingWall" type="AnimatableBody2D"]
 script = ExtResource("1_ffkud")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_3s4q0")
+shape = SubResource("RectangleShape2D_ffkud")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = -10.0
@@ -19,5 +19,3 @@ color = Color(0.48962224, 0.48962224, 0.48962218, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="Timer" type="Timer" parent="."]
-
-[connection signal="timeout" from="Timer" to="." method="_on_start_delay_timer_timeout"]
